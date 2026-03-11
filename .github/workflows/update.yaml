@@ -36,5 +36,5 @@ jobs:
           git diff
           git config --global user.email "gha-bot@deathlesz.me"
           git config --global user.name "deathlesz/gha-bot"
-          git commit -m "chore: live update" -a || echo "No changes to commit"
+          git commit -m "chore: live update" -a || echo "no changes to commit"
           git push
