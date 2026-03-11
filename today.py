@@ -491,7 +491,7 @@ def svg_overwrite(
     justify_format(root, "follower_data", follower_data, 11)
     justify_format(root, "loc_data", loc_data[2], 10)
     justify_format(root, "loc_add", loc_data[0])
-    justify_format(root, "loc_del", loc_data[1], 7)
+    justify_format(root, "loc_del", loc_data[1], 6)
     tree.write(filename, encoding="utf-8", xml_declaration=True)
 
 
@@ -677,4 +677,3 @@ if __name__ == "__main__":
     print("Total GitHub GraphQL API calls:", "{:>3}".format(sum(QUERY_COUNT.values())))
     for funct_name, count in QUERY_COUNT.items():
         print("{:<28}".format("   " + funct_name + ":"), "{:>6}".format(count))
-
